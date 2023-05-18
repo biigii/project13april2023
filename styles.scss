@@ -1,0 +1,25 @@
+$c1: #ffd900;
+$c2: #006eff;
+$c3: #de3434;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav.navigation {
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 40px;
+  height: 130px;
+  background-color: $c2;
+  a {
+    color: $c1;
+    font-size: 1.5em;
+  }
+  .last {
+    align-self: end;
+  }
+}
