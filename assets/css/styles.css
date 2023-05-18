@@ -9,9 +9,6 @@ body {
 }
 
 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #de3434;
   background-color: #006eff;
   font-size: 4em;
@@ -22,8 +19,19 @@ section {
   height: 100%;
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  justify-content: center;
-  align-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+}
+
+.seven {
+  background-color: #fff;
+  align-self: end;
+  justify-self: end;
+}
+
+.two {
+  background-color: purple;
+  align-self: end;
+  justify-self: end;
 }/*# sourceMappingURL=styles.css.map */

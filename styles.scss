@@ -14,9 +14,9 @@ body {
 }
 
 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   color: $c3;
   // width: 100px;
   // height: 100px;
@@ -26,16 +26,41 @@ div {
   }
 }
 
-
-
 section {
   background-color: $c1;
   height: 100%;
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  
-  justify-content: center;
-  align-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  // justify-content: center;
+  // align-content: space-evenly;
+
+  // justify-items: center;
+  // align-items: center;
+
+  place-items: center;
 }
+
+.seven {
+  background-color: #fff;
+  align-self: end;
+  justify-self: end;
+}
+
+.two {
+  background-color: purple;
+  align-self: end;
+  justify-self: end;
+}
+
+
+// body {
+//   display: grid;
+//   place-content: center;
+//   gap: 20px;
+//   h1 {
+//     justify-self: center;
+//   }
+// }
