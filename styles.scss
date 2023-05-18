@@ -52,6 +52,12 @@ main {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  @media(min-width: 700px) and (max-width: 1400px) {
+    grid-template-columns: repeat(2, 1fr);
+    };
+    @media(max-width: 700px) {
+      grid-template-columns: 1fr;
+      };
   // gap: 20px;
   row-gap: 30px;
   column-gap: 5px;
@@ -63,5 +69,9 @@ main {
     gap: 30px;
     align-items: center;
     justify-content: center;
+    @media(max-width: 700px) {
+      flex-direction: row;
+      align-items: end;
+      };
   }
 }
